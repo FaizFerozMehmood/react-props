@@ -1,4 +1,4 @@
-function Card({image1,image2,image3}){
+function Card({image1,image2,image3,description,description2,description3}){
     console.log(image1)
     return(
        <div>
@@ -20,8 +20,7 @@ function Card({image1,image2,image3}){
               The Catalyzer
             </h1>
             <p className="leading-relaxed mb-3">
-              Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-              microdosing tousled waistcoat.
+              {description}
             </p>
             <div className="flex items-center flex-wrap ">
               <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -87,8 +86,7 @@ function Card({image1,image2,image3}){
               The 400 Blows
             </h1>
             <p className="leading-relaxed mb-3">
-              Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-              microdosing tousled waistcoat.
+              {description2}
             </p>
             <div className="flex items-center flex-wrap">
               <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -154,8 +152,7 @@ function Card({image1,image2,image3}){
               Shooting Stars
             </h1>
             <p className="leading-relaxed mb-3">
-              Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-              microdosing tousled waistcoat.
+              {description3}
             </p>
             <div className="flex items-center flex-wrap ">
               <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
