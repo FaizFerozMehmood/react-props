@@ -4,7 +4,15 @@ import Card from "./myComponents/Card";
 function App() {
   return (
     <div>
-      <Header text="tailwind can be used in react" 
+      <Header
+       text="Faiz Mahmood"
+       link1 ="ABout"
+       link2 ="Contact"
+       link3 = "About US"
+       link4= "Help"
+       btnText = "This funny tag syntax is neither a string nor HTML is called JSX"
+       clr = "white"
+       bg ="black"
 
       />
       <Card

@@ -1,9 +1,9 @@
-function Header({text,image1}){
+function Header({text,image1,link1,link2,link3,link4,btnText,clr,bg}){
   console.log(image1);
   
     return(
         <div>
-            <header className="text-gray-600 body-font">
+    <header className="text-gray-600 body-font">
   <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
       <svg
@@ -21,13 +21,13 @@ function Header({text,image1}){
       <span className="ml-3 text-xl">{text}</span>
     </a>
     <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a className="mr-5 hover:text-gray-900">First Link</a>
-      <a className="mr-5 hover:text-gray-900">Second Link</a>
-      <a className="mr-5 hover:text-gray-900">Third Link</a>
-      <a className="mr-5 hover:text-gray-900">Fourth Link</a>
+      <a className="mr-5 hover:text-gray-900">{link1}</a>
+      <a className="mr-5 hover:text-gray-900">{link2}</a>
+      <a className="mr-5 hover:text-gray-900">{link3}</a>
+      <a className="mr-5 hover:text-gray-900">{link4}</a>
     </nav>
-    <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-      Button
+    <button style={{color:clr,backgroundColor:bg}} className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+    {btnText}
       <svg
         fill="none"
         stroke="currentColor"
@@ -42,8 +42,6 @@ function Header({text,image1}){
     </button>
   </div>
 </header>
-
-        
         </div>
     )
 }
